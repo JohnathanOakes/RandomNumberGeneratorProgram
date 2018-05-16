@@ -1,0 +1,7 @@
+Z:\johnathanoakes On My Mac\Documents\GitHub\dvp1-JohnathanOakes\Oakes_Johnathan_RandomNumberGame\Oakes_Johnathan_RandomNumberGame\bin\Debug\Oakes_Johnathan_RandomNumberGame.exe.config
+Z:\johnathanoakes On My Mac\Documents\GitHub\dvp1-JohnathanOakes\Oakes_Johnathan_RandomNumberGame\Oakes_Johnathan_RandomNumberGame\bin\Debug\Oakes_Johnathan_RandomNumberGame.exe
+Z:\johnathanoakes On My Mac\Documents\GitHub\dvp1-JohnathanOakes\Oakes_Johnathan_RandomNumberGame\Oakes_Johnathan_RandomNumberGame\bin\Debug\Oakes_Johnathan_RandomNumberGame.pdb
+Z:\johnathanoakes On My Mac\Documents\GitHub\dvp1-JohnathanOakes\Oakes_Johnathan_RandomNumberGame\Oakes_Johnathan_RandomNumberGame\obj\Debug\Oakes_Johnathan_RandomNumberGame.csprojResolveAssemblyReference.cache
+Z:\johnathanoakes On My Mac\Documents\GitHub\dvp1-JohnathanOakes\Oakes_Johnathan_RandomNumberGame\Oakes_Johnathan_RandomNumberGame\obj\Debug\Oakes_Johnathan_RandomNumberGame.csproj.CoreCompileInputs.cache
+Z:\johnathanoakes On My Mac\Documents\GitHub\dvp1-JohnathanOakes\Oakes_Johnathan_RandomNumberGame\Oakes_Johnathan_RandomNumberGame\obj\Debug\Oakes_Johnathan_RandomNumberGame.exe
+Z:\johnathanoakes On My Mac\Documents\GitHub\dvp1-JohnathanOakes\Oakes_Johnathan_RandomNumberGame\Oakes_Johnathan_RandomNumberGame\obj\Debug\Oakes_Johnathan_RandomNumberGame.pdb
