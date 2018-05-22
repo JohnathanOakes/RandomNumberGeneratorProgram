@@ -5,3 +5,10 @@ Z:\johnathanoakes On My Mac\Documents\GitHub\dvp1-JohnathanOakes\Oakes_Johnathan
 Z:\johnathanoakes On My Mac\Documents\GitHub\dvp1-JohnathanOakes\Oakes_Johnathan_RandomNumberGame\Oakes_Johnathan_RandomNumberGame\obj\Debug\Oakes_Johnathan_RandomNumberGame.csproj.CoreCompileInputs.cache
 Z:\johnathanoakes On My Mac\Documents\GitHub\dvp1-JohnathanOakes\Oakes_Johnathan_RandomNumberGame\Oakes_Johnathan_RandomNumberGame\obj\Debug\Oakes_Johnathan_RandomNumberGame.exe
 Z:\johnathanoakes On My Mac\Documents\GitHub\dvp1-JohnathanOakes\Oakes_Johnathan_RandomNumberGame\Oakes_Johnathan_RandomNumberGame\obj\Debug\Oakes_Johnathan_RandomNumberGame.pdb
+\\vmware-host\Shared Folders\Desktop\Portfolio\Random-Number-Generator-Program.%\Oakes_Johnathan_RandomNumberGame\Oakes_Johnathan_RandomNumberGame\bin\Debug\Oakes_Johnathan_RandomNumberGame.exe.config
+\\vmware-host\Shared Folders\Desktop\Portfolio\Random-Number-Generator-Program.%\Oakes_Johnathan_RandomNumberGame\Oakes_Johnathan_RandomNumberGame\bin\Debug\Oakes_Johnathan_RandomNumberGame.exe
+\\vmware-host\Shared Folders\Desktop\Portfolio\Random-Number-Generator-Program.%\Oakes_Johnathan_RandomNumberGame\Oakes_Johnathan_RandomNumberGame\bin\Debug\Oakes_Johnathan_RandomNumberGame.pdb
+\\vmware-host\Shared Folders\Desktop\Portfolio\Random-Number-Generator-Program.%\Oakes_Johnathan_RandomNumberGame\Oakes_Johnathan_RandomNumberGame\obj\Debug\Oakes_Johnathan_RandomNumberGame.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Desktop\Portfolio\Random-Number-Generator-Program.%\Oakes_Johnathan_RandomNumberGame\Oakes_Johnathan_RandomNumberGame\obj\Debug\Oakes_Johnathan_RandomNumberGame.csproj.CoreCompileInputs.cache
+\\vmware-host\Shared Folders\Desktop\Portfolio\Random-Number-Generator-Program.%\Oakes_Johnathan_RandomNumberGame\Oakes_Johnathan_RandomNumberGame\obj\Debug\Oakes_Johnathan_RandomNumberGame.exe
+\\vmware-host\Shared Folders\Desktop\Portfolio\Random-Number-Generator-Program.%\Oakes_Johnathan_RandomNumberGame\Oakes_Johnathan_RandomNumberGame\obj\Debug\Oakes_Johnathan_RandomNumberGame.pdb

@@ -48,10 +48,9 @@ namespace Oakes_Johnathan_RandomNumberGame
                         playerItem = Console.ReadLine();
                     }
 
-                    //adding the random number.
-                    Random randomNumber = new Random();
-                    int npcitem = randomNumber.Next(1, 3);
-                    Console.WriteLine(npcitem);
+                    NPC_sItem npcItem = new NPC_sItem();
+                    int npcitem = npcItem.getNPCItem();
+                    
                     //will run if player scores a point
                     if ((playerItem == "1" && npcitem == 2) || (playerItem == "2" && npcitem == 3) || (playerItem == "3" && npcitem == 1))
                     {
