@@ -22,7 +22,7 @@ namespace Oakes_Johnathan_RandomNumberGame
 
             //Setting some Variables
               int npcPoints = 0;
-              int playerPoint = 0;
+              int playerPoints = 0;
             string answer = "1";
             while (answer == "1")
             {
@@ -30,7 +30,7 @@ namespace Oakes_Johnathan_RandomNumberGame
 
 
 
-                while (npcPoints != 5 && playerPoint != 5)
+                while (npcPoints != 5 && playerPoints != 5)
 
                 {
 
@@ -60,14 +60,14 @@ namespace Oakes_Johnathan_RandomNumberGame
                     //will run if player scores a point
                     if ((playerItem == "1" && NPCItem == 2) || (playerItem == "2" && NPCItem == 3) || (playerItem == "3" && NPCItem == 1))
                     {
-                        playerPoint += 1;
-                        Console.WriteLine("Player score{0} computer score{1}", playerPoint, npcPoints);
+                        playerPoints += 1;
+                        Console.WriteLine("Player won round! Player score{0} computer score{1}", playerPoints, npcPoints);
                     }
                     //Will run if computer scores a point.
                     if ((playerItem == "2" && NPCItem == 1) || (playerItem == "3" && NPCItem == 2) || (playerItem == "3" && NPCItem == 1))
                     {
                         npcPoints += 1;
-                        Console.WriteLine("Player score{0} computer score{1}", playerPoint, npcPoints);
+                        Console.WriteLine("NPC won Round! Player score{0} computer score{1}", playerPoints, npcPoints);
                     }
                     //Will run if round is a tie.
                     if ((playerItem == "1" && NPCItem == 1) || (playerItem == "2" && NPCItem == 2) ||(playerItem == "3" && NPCItem ==3))
@@ -79,9 +79,14 @@ namespace Oakes_Johnathan_RandomNumberGame
                 if (npcPoints == 5)
                 {
                     Console.WriteLine("Computer won");
+
                 }
                 //Will display if player won
-                Console.WriteLine("Player won");
+                if (playerPoints == 5)
+                {
+                    Console.WriteLine("Player won");
+
+                }
                 Console.WriteLine("Would you like to play again?\r\nEnter 1 for yes\r\n Enter 2 for no");
                 answer = Console.ReadLine();
 
@@ -94,7 +99,7 @@ namespace Oakes_Johnathan_RandomNumberGame
                 if (answer == "1")
                 {
                     npcPoints = 0;
-                    playerPoint = 0;
+                    playerPoints = 0;
                 }
             }
  
