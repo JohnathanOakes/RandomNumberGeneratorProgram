@@ -48,23 +48,26 @@ namespace Oakes_Johnathan_RandomNumberGame
                         playerItem = Console.ReadLine();
                     }
 
-                    NPC_sItem npcItem = new NPC_sItem();
-                    int npcitem = npcItem.getNPCItem();
-                    
+                    //Creating the item that the NPC will use for the round.
+
+                    Random randomnumber = new Random();
+                    int NPCItem = randomnumber.Next(1, 3);
+
+
                     //will run if player scores a point
-                    if ((playerItem == "1" && npcitem == 2) || (playerItem == "2" && npcitem == 3) || (playerItem == "3" && npcitem == 1))
+                    if ((playerItem == "1" && NPCItem == 2) || (playerItem == "2" && NPCItem == 3) || (playerItem == "3" && NPCItem == 1))
                     {
                         playerPoint += 1;
                         Console.WriteLine("Player score{0} computer score{1}", playerPoint, npcPoints);
                     }
                     //Will run if computer scores a point.
-                    if ((playerItem == "2" && npcitem == 1) || (playerItem == "3" && npcitem == 2) || (playerItem == "1" && npcitem == 1))
+                    if ((playerItem == "2" && NPCItem == 1) || (playerItem == "3" && NPCItem == 2) || (playerItem == "3" && NPCItem == 1))
                     {
                         npcPoints += 1;
                         Console.WriteLine("Player score{0} computer score{1}", playerPoint, npcPoints);
                     }
-                    //Will run if a player scores a point.
-                    if ((playerItem == "1" && npcitem == 1) || (playerItem == "2" && npcitem == 2) || (playerItem == "3" & npcitem == 3))
+                    //Will run if round is a tie.
+                    if ((playerItem == "1" && NPCItem == 1) || (playerItem == "2" && NPCItem == 2) ||(playerItem == "3" && NPCItem ==3))
                     {
                         Console.WriteLine("Tie no score added");
                     }

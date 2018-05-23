@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Oakes_Johnathan_RandomNumberGame
 {
-    class NPCItem
+    class NPCItems
     {
         //This class will create a random item that the NPC will use.
 
@@ -14,7 +14,7 @@ namespace Oakes_Johnathan_RandomNumberGame
         int memNPCItem;
         
         //Consturctor for the class
-        public NPCItem(int _NPCItem)
+        public NPCItems(int _NPCItem)
         {
             //Setting varaiables for the paramater.
             memNPCItem = _NPCItem;
@@ -28,13 +28,14 @@ namespace Oakes_Johnathan_RandomNumberGame
         }
 
         //Creating the setter for the class.
-        public void SetNPCItem(int _height)
+        public int SetNPCItem(int _height)
         {
             //Allowing the value to be changed.
             Random randomNumber = new Random();
             int NPCItem = randomNumber.Next(1, 3);
             _height = NPCItem;
             this.memNPCItem = _height;
+            return _height;
         }
     }
 }
