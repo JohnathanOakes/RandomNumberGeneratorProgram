@@ -27,7 +27,7 @@ namespace Oakes_Johnathan_RandomNumberGame
             return memNPCItem;
         }
 
-        //Creating the setter for the class.
+        //Creating the Setter for the class.
          public void SetNPCItem(int _height)
         {
             //Allowing the value to be changed.

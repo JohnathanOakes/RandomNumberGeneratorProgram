@@ -26,7 +26,7 @@ namespace Oakes_Johnathan_RandomNumberGame
             string answer = "1";
             while (answer == "1")
             {
-                Console.WriteLine("Welcome the goal of this game is score 5 points before the computer does\r\n You will be able to select form 3 items a shield, arrow, and sword.\r\nYou gain 1 point if your item beats the computers item and the computer gains 1 point if its item beats your item.\r\nA shield beats a arrow, arrow beats sword, and sword beats shield.\r\n");
+                Console.WriteLine("Welcome the goal of this game is score 5 points before the computer does\r\nYou will be able to select form 3 items a shield, arrow, and sword.\r\nYou gain 1 point if your item beats the computers item and the computer gains 1 point if its item beats your item.\r\nA shield beats a arrow, arrow beats sword, and sword beats shield.\r\n");
 
 
 
