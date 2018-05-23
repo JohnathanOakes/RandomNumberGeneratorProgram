@@ -28,14 +28,17 @@ namespace Oakes_Johnathan_RandomNumberGame
         }
 
         //Creating the setter for the class.
-        public int SetNPCItem(int _height)
+         public void SetNPCItem(int _height)
         {
             //Allowing the value to be changed.
-            Random randomNumber = new Random();
-            int NPCItem = randomNumber.Next(1, 3);
-            _height = NPCItem;
+            
             this.memNPCItem = _height;
-            return _height;
+        }
+        public int Item ()
+        {
+            Random randomNumber = new Random();
+            int item = randomNumber.Next(1, 3);
+            return item;
         }
     }
 }

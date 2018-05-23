@@ -50,8 +50,10 @@ namespace Oakes_Johnathan_RandomNumberGame
 
                     //Creating the item that the NPC will use for the round.
 
-                    Random randomnumber = new Random();
-                    int NPCItem = randomnumber.Next(1, 3);
+                    NPCItems NPC = new NPCItems(0);
+                    int NPCItem = 0;
+                    NPCItem = NPC.Item();
+                
 
 
                     //will run if player scores a point
