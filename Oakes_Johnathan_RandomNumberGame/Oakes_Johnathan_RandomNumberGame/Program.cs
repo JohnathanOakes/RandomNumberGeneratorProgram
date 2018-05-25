@@ -33,7 +33,7 @@ namespace Oakes_Johnathan_RandomNumberGame
                 while (npcPoints != 5 && playerPoints != 5)
 
                 {
-
+                    //Varabile to hold the vaule of playes item
 
                     //Welcoming the user and telling them about the program.
                     
@@ -49,31 +49,6 @@ namespace Oakes_Johnathan_RandomNumberGame
                         playerItem = Console.ReadLine();
                     }
 
-                    //Creating the item that the NPC will use for the round.
-
-                    NPCItems NPC = new NPCItems(0);
-                    int NPCItem = 0;
-                    NPCItem = NPC.Item();
-                
-
-
-                    //will run if player scores a point
-                    if ((playerItem == "1" && NPCItem == 2) || (playerItem == "2" && NPCItem == 3) || (playerItem == "3" && NPCItem == 1))
-                    {
-                        playerPoints += 1;
-                        Console.WriteLine("Player won round! Player score{0} computer score{1}", playerPoints, npcPoints);
-                    }
-                    //Will run if computer scores a point.
-                    if ((playerItem == "2" && NPCItem == 1) || (playerItem == "3" && NPCItem == 2) || (playerItem == "3" && NPCItem == 1))
-                    {
-                        npcPoints += 1;
-                        Console.WriteLine("NPC won Round! Player score{0} computer score{1}", playerPoints, npcPoints);
-                    }
-                    //Will run if round is a tie.
-                    if ((playerItem == "1" && NPCItem == 1) || (playerItem == "2" && NPCItem == 2) ||(playerItem == "3" && NPCItem ==3))
-                    {
-                        Console.WriteLine("Tie no score added");
-                    }
                 }
                 //Will display if computer won
                 if (npcPoints == 5)
@@ -107,4 +82,5 @@ namespace Oakes_Johnathan_RandomNumberGame
         }
         
     }
+    
 }

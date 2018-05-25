@@ -44,6 +44,16 @@ namespace Oakes_Johnathan_RandomNumberGame
             this.memNPCScore = _NPCScore;
         }
 
-        NPCItems npc = new NPCItems(0);
+        public List<int> Scoring (int playeritem, int npcitem)
+        {
+            //Creating the list to hold the vaules of the scores
+            List<int> Scores = new List <int>();
+            NPCItems NPC = new NPCItems(0);
+            npcitem = NPC.Item();
+
+            Scores.Add(0);
+            Scores.Add(0);
+            
+        }
     }
 }
