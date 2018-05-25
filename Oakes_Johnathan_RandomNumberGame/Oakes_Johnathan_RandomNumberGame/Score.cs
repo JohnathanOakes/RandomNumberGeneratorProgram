@@ -48,11 +48,31 @@ namespace Oakes_Johnathan_RandomNumberGame
         {
             //Creating the list to hold the vaules of the scores
             List<int> Scores = new List <int>();
-            NPCItems NPC = new NPCItems(0);
-            npcitem = NPC.Item();
 
             Scores.Add(0);
             Scores.Add(0);
+
+            //Calling the Class for the NPCS item
+            NPCItems NPC = new NPCItems(0);
+            npcitem = NPC.Item();
+
+            //Calling the class for the players item
+            Player_Item player = new Player_Item();
+            playeritem = player.playeritem;
+
+            //Will run if player wins the round.
+            if ((playeritem == 1 && npcitem == 2) || (playeritem == 2 && npcitem == 3) || (playeritem == 3 && npcitem == 1))
+            {
+                Scores[0]++;
+                Console.WriteLine("Round Won");
+            }
+
+            if ((playeritem == 2 && npcitem == 1) || (playeritem == 3 && npcitem == 2) || (playeritem == 1 && npcitem == 3))
+            {
+                Scores[1]++;
+                Console.WriteLine("Draw");
+            }
+            return Scores;
             
         }
     }

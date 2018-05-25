@@ -36,19 +36,18 @@ namespace Oakes_Johnathan_RandomNumberGame
                     //Varabile to hold the vaule of playes item
 
                     //Welcoming the user and telling them about the program.
-                    
+
                     //Asking the user what item they would like to use.
                     Console.WriteLine("What what item would you like to use if shield type 1 if arrow type 2 if sword type 3");
                     //Cataching users response.
                     string playerItem = Console.ReadLine();
 
-                    while (playerItem != "1" && playerItem != "2" && playerItem != "3")
+                    Player_Item player = new Player_Item();
+                    player.PlayerItem(playerItem);
+                    
+ 
 
-                    {
-                        Console.WriteLine("Error item does not exist.\r\n Please type in 1, 2, or 3");
-                        playerItem = Console.ReadLine();
-                    }
-
+                    
                 }
                 //Will display if computer won
                 if (npcPoints == 5)
@@ -80,7 +79,9 @@ namespace Oakes_Johnathan_RandomNumberGame
  
            
         }
+        //Method to allow the players item variable to be transfered without being changed.
         
+       
     }
     
 }
