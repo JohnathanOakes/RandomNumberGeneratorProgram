@@ -38,6 +38,9 @@ namespace Oakes_Johnathan_RandomNumberGame
                     //Telling them what item they selected
                     PlayersItem player = new PlayersItem();
                     player.PlayerItems(playeritem);
+                    //Telling the player what the NPC has selected;
+                    NPCItems NPC = new NPCItems(0);
+                    NPC.Item();
                     
  
 
@@ -74,7 +77,7 @@ namespace Oakes_Johnathan_RandomNumberGame
            
         }
         //This method will be used to hold the variable for the players item.
-        public  static string PlayerItem()
+        public static string PlayerItem()
         {
             Console.WriteLine("Please select a item that you wish to use for this round");
             string playeritem = Console.ReadLine();

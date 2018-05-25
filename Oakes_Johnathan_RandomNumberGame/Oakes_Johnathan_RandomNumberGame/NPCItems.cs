@@ -38,6 +38,16 @@ namespace Oakes_Johnathan_RandomNumberGame
         {
             Random randomNumber = new Random();
             int item = randomNumber.Next(1, 3);
+            if (item == 1)
+            {
+                Console.WriteLine("NPC has selected the shield");
+            }
+            if (item == 2)
+            {
+                Console.WriteLine("NPC has selected the arrow");
+            }
+            if (item == 3)
+                Console.WriteLine("NPC has selected the sword");
             return item;
         }
     }

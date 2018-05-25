@@ -48,7 +48,8 @@ namespace Oakes_Johnathan_RandomNumberGame
         {
             //Creating the list to hold the vaules of the scores
             List<int> Scores = new List <int>();
-
+            //Calling the method in the main class
+            string playersitem = Program.PlayerItem();
             Scores.Add(0);
             Scores.Add(0);
 
@@ -58,7 +59,7 @@ namespace Oakes_Johnathan_RandomNumberGame
 
             //Calling the class for the players item
             PlayersItem player = new PlayersItem();
-            playeritem = player.PlayerItems("players");
+            playeritem = player.PlayerItems(playersitem);
 
             //Will run if player wins the round.
             if ((playeritem == 1 && npcitem == 2) || (playeritem == 2 && npcitem == 3) || (playeritem == 3 && npcitem == 1))
