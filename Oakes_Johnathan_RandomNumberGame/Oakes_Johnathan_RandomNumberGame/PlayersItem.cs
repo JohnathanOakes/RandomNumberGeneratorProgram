@@ -6,21 +6,20 @@ using System.Threading.Tasks;
 
 namespace Oakes_Johnathan_RandomNumberGame
 {
-    class PlayerItem
+    class PlayersItem
     {
+        
 
         //This class will hold the value for the players item.
         public int PlayerItems(string playeritem)
         {
+            Program Player = new Program();
+            
             int item;
             //Converting a string varable to a intager varable.
 
             int.TryParse(playeritem, out item);
 
-            while (!(int.TryParse(playeritem, out item)) && playeritem == "1" && playeritem == "2" && playeritem == "3") ;
-            {
-                Console.WriteLine("Error the item that you selected does not exist.");
-            }
             //Telling the player the item they selected
             if (item == 1)
             {
@@ -38,6 +37,6 @@ namespace Oakes_Johnathan_RandomNumberGame
             }
             return item;
         }
-
+        
     }
 }

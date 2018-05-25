@@ -57,8 +57,8 @@ namespace Oakes_Johnathan_RandomNumberGame
             npcitem = NPC.Item();
 
             //Calling the class for the players item
-            Player_Item player = new Player_Item();
-            playeritem = player.playeritem;
+            PlayersItem player = new PlayersItem();
+            playeritem = player.PlayerItems("players");
 
             //Will run if player wins the round.
             if ((playeritem == 1 && npcitem == 2) || (playeritem == 2 && npcitem == 3) || (playeritem == 3 && npcitem == 1))

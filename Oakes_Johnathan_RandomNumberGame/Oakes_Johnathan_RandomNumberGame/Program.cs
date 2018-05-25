@@ -26,24 +26,18 @@ namespace Oakes_Johnathan_RandomNumberGame
             string answer = "1";
             while (answer == "1")
             {
+                //Welcomeing the user and telling them about the program;
                 Console.WriteLine("Welcome the goal of this game is score 5 points before the computer does\r\nYou will be able to select form 3 items a shield, arrow, and sword.\r\nYou gain 1 point if your item beats the computers item and the computer gains 1 point if its item beats your item.\r\nA shield beats a arrow, arrow beats sword, and sword beats shield.\r\n");
-
-
-
+                //This part of the code will run until the game is won or lost
                 while (npcPoints != 5 && playerPoints != 5)
-
                 {
                     //Varabile to hold the vaule of playes item
-
-                    //Welcoming the user and telling them about the program.
-
+                    string playeritem;
                     //Asking the user what item they would like to use.
-                    Console.WriteLine("What what item would you like to use if shield type 1 if arrow type 2 if sword type 3");
-                    //Cataching users response.
-                    string playerItem = Console.ReadLine();
-
-                    Player_Item player = new Player_Item();
-                    player.PlayerItem(playerItem);
+                    playeritem = PlayerItem();
+                    //Telling them what item they selected
+                    PlayersItem player = new PlayersItem();
+                    player.PlayerItems(playeritem);
                     
  
 
@@ -79,9 +73,15 @@ namespace Oakes_Johnathan_RandomNumberGame
  
            
         }
-        //Method to allow the players item variable to be transfered without being changed.
-        
-       
+        //This method will be used to hold the variable for the players item.
+        public  static string PlayerItem()
+        {
+            Console.WriteLine("Please select a item that you wish to use for this round");
+            string playeritem = Console.ReadLine();
+            return playeritem;
+        }
+
+
     }
     
 }
