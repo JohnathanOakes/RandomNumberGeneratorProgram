@@ -20,40 +20,50 @@ namespace Oakes_Johnathan_RandomNumberGame
              * The game is similar to rock paper scissors
              */
 
-            //Setting some Variables
-              int npcPoints = 0;
-              int playerPoints = 0;
+              //List for the scores;
+              List<int> points = new List<int>() { 0, 0 };
             string answer = "1";
-            while (answer == "1")
+            //Varaiables for the points;
+            int npcPoints = 0;
+            int playerPoints = 0;
             {
                 //Welcomeing the user and telling them about the program;
                 Console.WriteLine("Welcome the goal of this game is score 5 points before the computer does\r\nYou will be able to select form 3 items a shield, arrow, and sword.\r\nYou gain 1 point if your item beats the computers item and the computer gains 1 point if its item beats your item.\r\nA shield beats a arrow, arrow beats sword, and sword beats shield.\r\n");
                 //This part of the code will run until the game is won or lost
-                while (npcPoints != 5 && playerPoints != 5)
+                while (points [0] != 5 && points[1] != 5)
                 {
                     //Varabile to hold the vaule of playes item
                     string playeritem;
                     //Asking the user what item they would like to use.
                     playeritem = PlayerItem();
+                    int item;
                     //Telling them what item they selected
-                    PlayersItem player = new PlayersItem();
-                    player.PlayerItems(playeritem);
+                   PlayerItem player = new PlayerItem();
+                   item = player.PlayerItems(playeritem);
                     //Telling the player what the NPC has selected;
                     NPCItems NPC = new NPCItems(0);
-                    NPC.Item();
+                    int NPCItem;
+                    NPCItem = NPC.Item();
+                    
+                    Score scores = new Score();
+                    points = scores.Scoring(item, NPCItem);
+                    playerPoints += points[0];
+                    npcPoints += points[1];
+                   Console.WriteLine("Player {0} NPC {1}", playerPoints, npcPoints);
+                       
                     
  
 
                     
                 }
                 //Will display if computer won
-                if (npcPoints == 5)
+                if (points[1] == 5)
                 {
                     Console.WriteLine("Computer won");
 
                 }
                 //Will display if player won
-                if (playerPoints == 5)
+                if (points[0] == 5)
                 {
                     Console.WriteLine("Player won");
 
@@ -69,8 +79,8 @@ namespace Oakes_Johnathan_RandomNumberGame
                 }
                 if (answer == "1")
                 {
-                    npcPoints = 0;
-                    playerPoints = 0;
+                    points[1] = 0;
+                    points[0] = 0;
                 }
             }
  
@@ -81,7 +91,15 @@ namespace Oakes_Johnathan_RandomNumberGame
         {
             Console.WriteLine("Please select a item that you wish to use for this round");
             string playeritem = Console.ReadLine();
+            
+            //Error Loop
+            while (playeritem != "1" && playeritem != "2" && playeritem != "3")
+            {
+                Console.WriteLine("Error the item you selected does not exist please enter a item that exist");
+                playeritem = Console.ReadLine();
+            }
             return playeritem;
+
         }
 
 
