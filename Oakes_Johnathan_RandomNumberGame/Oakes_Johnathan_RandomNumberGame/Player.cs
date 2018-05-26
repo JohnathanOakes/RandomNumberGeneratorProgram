@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Oakes_Johnathan_RandomNumberGame
 {
-    class PlayerItem
+    class Player
     {
         
 
