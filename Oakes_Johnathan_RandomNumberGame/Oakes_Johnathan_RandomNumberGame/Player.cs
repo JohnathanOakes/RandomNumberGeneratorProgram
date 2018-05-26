@@ -10,7 +10,7 @@ namespace Oakes_Johnathan_RandomNumberGame
     {
         
 
-        //This class will hold the value for the players item.
+        //This class will hold the value for the players item along with telling them what item they have created
         public int PlayerItems(string playeritem)
         {
             Program Player = new Program();

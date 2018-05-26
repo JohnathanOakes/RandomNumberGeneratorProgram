@@ -19,13 +19,11 @@ namespace Oakes_Johnathan_RandomNumberGame
              * The npc guess will be made by a random number generator
              * The game is similar to rock paper scissors
              */
-
               //List for the scores;
               List<int> points = new List<int>() { 0, 0 };
             string answer = "1";
             while (answer == "1")
             {
-
                 //Varaiables for the points;
                 int npcPoints = 0;
                 int playerPoints = 0;
@@ -35,27 +33,9 @@ namespace Oakes_Johnathan_RandomNumberGame
                     //This part of the code will run until the game is won or lost
                     while (playerPoints != 5 && npcPoints != 5)
                     {
-                        //Varabile to hold the vaule of playes item
-                        string playeritem;
-                        
-                        //Asking the user what item they would like to use.
-                        playeritem = PlayerItem();
-                        
-                        //Telling them what item they selected
-                        Player player = new Player();
-                        
-
-                        
-                        //Telling the player what the NPC has selected;
-                        NPCItems NPC = new NPCItems(0);
-                        
-                        int NPCItem;
-                      
-                        NPCItem = NPC.Item();
-                        
-                        Score scores = new Score();
+                        Game scores = new Game();
                       //Calling the Score class.
-                        points = scores.Scoring(player.PlayerItems(playeritem), NPCItem);
+                        points = scores.Scoring();
                        //Adding Points
                         playerPoints += points[0];
                         npcPoints += points[1];
@@ -66,17 +46,14 @@ namespace Oakes_Johnathan_RandomNumberGame
                     if (points[1] == 5)
                     {
                        Console.WriteLine("You Lost");
-
                     }
                     //Will display if player won
                     if (playerPoints == 5)
                     {
                         Console.WriteLine("You Won");
-
                     }
                     Console.WriteLine("Would you like to play again?\r\nEnter 1 for yes\r\n Enter 2 for no");
                     answer = Console.ReadLine();
-
                     //Creating a valadation loop
                     while (answer != "1" && answer != "2")
                     {
@@ -89,8 +66,6 @@ namespace Oakes_Johnathan_RandomNumberGame
                         npcPoints = 0;
                     }
                 }
-
-
             }
             Console.WriteLine("Game Over");
         }
@@ -99,7 +74,6 @@ namespace Oakes_Johnathan_RandomNumberGame
         {
             Console.WriteLine("Please select a item that you wish to use for this round");
             string playeritem = Console.ReadLine();
-            
             //Error Loop
             while (playeritem != "1" && playeritem != "2" && playeritem != "3")
             {
@@ -108,10 +82,6 @@ namespace Oakes_Johnathan_RandomNumberGame
             }
             return playeritem; 
         }
-        public  string  GetPlayerItem()
-        {
-            string playeritem = PlayerItem();
-            return playeritem;
-        }
+
     }
 }
